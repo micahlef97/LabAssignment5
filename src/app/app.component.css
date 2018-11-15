@@ -1,0 +1,26 @@
+.app-container-grid {
+    display: grid;
+    /* grid-template-columns: 1fr 6fr 2fr; */
+    grid-template-rows: 1fr 7fr 1fr;
+    height: 100vh;
+  }
+
+  /* .main-header, .main-footer {
+    background-color: #9d9b9b;
+    display: grid;
+    grid-template-columns: 1fr 6fr 2fr;
+  } */
+  .main-header, .main-container-grid, .main-footer {
+    /* grid-column: 1 / 4; */
+  }
+
+  /* .main-container-grid {
+    /* align-self:center;
+    justify-self: center; */
+    /* display: grid;
+    grid-template-columns: 1fr 6fr 2fr;
+  } */
+  /* .align-center {
+    margin: 15px;
+    border: 1px dashed #CCC;
+  } */
