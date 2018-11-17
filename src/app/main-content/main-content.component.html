@@ -2,12 +2,14 @@
   <div class="align-center" >r2c1</div>
   <div class="align-center">
     <!-- <button (click)="addStudent()" class= "add-button">Add Student</button> -->
-    <button (click)="addStudent()" type="button" class="align-right btn btn-default add-button" aria-label="Left Align">
+    <!-- <button (click)="addStudent()" type="button" class="align-right btn btn-default add-button" aria-label="Left Align">
       Add Student
     </button>
     <button (click)="saveStudent()" type="button" class="align-right btn btn-default add-button" aria-label="Left Align">
       Save
-    </button>
+    </button> -->
+    <button (click)="addStudent()" mat-raised-button class="nav-button"color="accent" class="align-right btn btn-default add-button" aria-label="Left Align">Save</button>
+    <button (click)="saveStudent(student)" mat-raised-button class="nav-button"color="accent" class="align-right btn btn-default add-button" aria-label="Left Align">Add Student</button>
     <table class="table-one">
       <thead>
         <tr>
@@ -25,9 +27,13 @@
           <td>{{student.lastName}}</td>
           <td>{{student.course}}</td>
           <td>
+              <button (click)="removeStudent(i)" mat-raised-button class="nav-button"color="warn" class="align-right btn btn-default add-button" aria-label="Left Align">
+                  <mat-icon>delete</mat-icon>
+              </button>
+<!-- 
             <button (click)="removeStudent(i)" type="button" class="align-right btn btn-default add-button" aria-label="Left Align">
               x
-            </button>
+            </button> -->
           </td>
           </tr>
       </tbody>
